@@ -1,9 +1,10 @@
-// aca se pueden definir scripos  npn rum <nombre del script>
-// convenciones 
-// Te abstrae del nombre del archivo 
-// Correr la aplicacción --> "start": archivo de 
-// Corre los test --> "test": 
-// Corre un servidor desde node --> "server": 
+
+//No te olvides de gestionar primero tus credenciales desde la API de Twitter
+
+// consumer_key
+// consumer_secret
+// access_token
+// access_token_secret
 
 const Twit = require('twit'); 
 const config = require('./config')
@@ -17,14 +18,14 @@ const params = {
 T.get('search/tweets', params, (err, data, response) => {
     // console.log(data.statuses)
 
-    // let favorites = [];
+    let favorites = [];
 
-    // const tweets = data.statuses;
+    const tweets = data.statuses;
     // console.log(tweets)
 
-    // tweets.forEach(tweet => {
-    //     console.log(tweet.favorite_count)
-    //     favorites.push(tweet.favorite_count)
-    // });
+    tweets.forEach(tweet => {
+        console.log(tweet.favorite_count)
+        favorites.push(tweet.favorite_count)
+    });
 
 }); 

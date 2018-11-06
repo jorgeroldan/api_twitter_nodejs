@@ -5,11 +5,15 @@
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
+    "jorge-start": "nodemon main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
   }
 }
