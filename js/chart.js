@@ -1,4 +1,4 @@
-new Chart(document.getElementById("doughnut-chart"), {
+new Chart(document.getElementById("myChart"), {
     type: 'doughnut',
     data: {
       labels: ["Hashtag 1", "Hashtag 2", "Hashtag 3", "Hashtag 4 ", "Hashtag 5"],
